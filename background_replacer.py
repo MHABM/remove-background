@@ -18,7 +18,7 @@ from image_utils import ensure_resolution, crop_centered
 
 developer_mode = os.getenv('DEV_MODE', False)
 
-You must uncomment this initialization block!
+# You must uncomment this initialization block!
 init_captioner()
 init_upscaler()
 init_segmenter()
