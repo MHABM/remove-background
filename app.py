@@ -181,7 +181,7 @@ with gr.Blocks(css=custom_css) as iface:
 
     # Enable this button!
     gen_button = gr.Button(
-        value="Generate!", variant="primary", interactive=False)
+        value="Generate!", variant="primary")
 
     with gr.Tab('Results'):
         results = gr.Gallery(
@@ -234,4 +234,4 @@ with gr.Blocks(css=custom_css) as iface:
         ],
     )
 
-iface.queue(max_size=10, api_open=False).launch(show_api=False)
+iface.queue(max_size=10, api_open=False).launch(show_api=False, share=True)
